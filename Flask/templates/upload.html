@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Upload images!</title>
+
+        <link rel="stylesheet" href="{{ url_for('static',     filename='css/upload.css') }}">
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+
+        <h1>Please upload the folder that contains all of the images! </h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+        Select Folder to Upload: <input type="file" name="file" id="files" multiple directory="" webkitdirectory="" moxdirectory="" /><br/><br/>
+        <input onclick="alert('Successfully Uploaded! (Images)')" type="submit" value="Upload" name="upload" accept="image/*"/>
+        </form>
+        <br>
+        <br>
+        <form action="" method="post" enctype="multipart/form-data">
+        <label for="quantity">Number of people (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <input onclick="alert('Successfully Uploaded! (Number)')" type="submit">
+        </form>
+
+        <a href="/" class="previous">&laquo; Previous</a>
+        <a href="/annotations" class="next">Next &raquo;</a>
+        <form action="">
+            <a href = "{{url_for('upload_reset')}}">Reset</a>
+        </form>
+        {% endblock %}
+    </body>
+</html>
+
+<!-- 1. User uploads image folder directory -->
+<!-- 2. We save images in our folder -->
+<!-- 3. User selects number of people value -->
+<!-- 4. We save txt file containing the number -->

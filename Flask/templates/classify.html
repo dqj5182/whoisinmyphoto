@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Classifying Photos!</title>
+
+        <link rel="stylesheet" href="{{ url_for('static',     filename='css/classify.css') }}">
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+
+        <h1> Classified Folders are ready to download! </h1>
+
+        <p> Thank you for using our webpage </p>
+
+        <img src="https://i5.walmartimages.com/asr/05d34f29-f446-4796-a766-79a77ec721f0.ef51c1415226f695c865b6d8d60b0167.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="thankyou" width="333" height="333">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <form action="" method="get" >
+            <a href = "{{url_for('download')}}">Download</a>
+        </form>
+
+
+        <br>
+        <a href="/annotations" class="previous">&laquo; Previous</a>
+        <a href="/" class="next">Home &raquo;</a>
+        <form action="">
+            <a href = "{{url_for('classify_reset')}}">Reset</a>
+        </form>
+        {% endblock %}
+    </body>
+</html>
