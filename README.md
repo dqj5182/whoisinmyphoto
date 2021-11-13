@@ -17,6 +17,6 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 
 
 ## What to do when error comes up:
-1. (For most problems) Click the “Reset” text at the end of each page to reset all the data uploaded or entered data and start again from the home page of http://dqj5182.pythonanywhere.com/
-2. The webpage may give errors between annotation page and classify page because of the long time duration from our face recognition model. If so, please go back to the home page http://dqj5182.pythonanywhere.com/ and go to the next page and click the reset button. This will delete all the information entered by you and you can start over the service with no problem.
+1. (For most problems) Click the “Reset” button at the end of each page to reset all the data uploaded or entered data and start again from the home page of [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
+2. The webpage may give errors between annotation page and classify page because of the long time duration from our face recognition model. If so, please go back to the home page [whoisinmyphoto.com](https://www.whoisinmyphoto.com) and go to the next page and click the reset button. This will delete all the information entered by you and you can start over the service with no problem.
 3. If there is an error during a demo due to deviation from steps above that is not solved with the “Reset” button, please let us know so that we can renew the service.
