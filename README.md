@@ -1,3 +1,3 @@
 # whoisinmyphoto
 
-The working webpage is now fully available at [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
+The fully working webpage is now available at [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
