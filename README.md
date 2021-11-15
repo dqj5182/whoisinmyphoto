@@ -23,5 +23,5 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 
 ## Example directories (or folders) to upload
 1. For uploads page
-![alt text]<img src="https://www.whoisinmyphoto.com/static/ScreenShotObamaFamilyImage.png" width="400" height="790">
+![alt text]<img src="https://www.whoisinmyphoto.com/static/ScreenShotObamaFamilyImage.png" width="698" height="506">
 3. For annotations page
