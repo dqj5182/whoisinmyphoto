@@ -1,0 +1,40 @@
+*{font-family: verdana;}
+
+a {
+    font-family: verdana;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 8px;
+  }
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+h1 {
+    font-family: verdana;
+    text-align: center;
+}
+
+h2 {
+    font-family: verdana;
+    text-align: center;
+}
+
+ol {
+    font-family: verdana;
+    list-style-position: inside;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    text-align: center;
+}
+
+form {
+    font-size: 18px;
+    font-family: verdana;
+}
