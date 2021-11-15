@@ -1,24 +1,53 @@
+*{font-family: verdana;}
+
 a {
+    font-family: verdana;
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
-  }
-  
-  a:hover {
+    padding: 8px 8px;
+}
+
+a:hover {
+    font-family: verdana;
     background-color: #ddd;
     color: black;
-  }
-  
-  .previous {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  .next {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .round {
-    border-radius: 50%;
-  }
+    padding: 8px 8px;
+}
+
+.previous {
+font-family: verdana;
+background-color: #f1f1f1;
+color: black;
+}
+
+.next {
+font-family: verdana;
+background-color: #04AA6D;
+color: white;
+}
+
+.round {
+border-radius: 50%;
+}
+
+/* Header/Blog Title */
+.header {
+  font-family: verdana;
+  padding: 30px;
+  text-align: center;
+  background: #F28683;
+}
+
+.header h1 {
+  font-family: verdana;
+  font-size: 50px;
+  color: white;
+}
+
+html {
+    background-color:#FBEEC1;
+}
+
+body {
+    text-align: center;
+}
