@@ -1,11 +1,9 @@
-# Packages
 from facenet_pytorch import MTCNN, InceptionResnetV1
 import face_recognition
 import torch
 import PIL.Image
 import torch.nn.functional as F
 torch.set_num_threads(1)
-
 
 # Initialization (we are using pre-trained face recognition model)
 mtcnn = MTCNN()
@@ -18,7 +16,14 @@ def get_embedding_list(image_list_input):
     embeddinglist = []
     for images in image_list_input:
         im = PIL.Image.open(images)
+        width, height = im.size
+        if width > 1000 or height > 1000:
+            im = im.resize((round(im.size[0]*0.3), round(im.size[1]*0.3)))
+        elif width > 500 or height > 500:
+            im = im.resize((round(im.size[0]*0.6), round(im.size[1]*0.6)))
+        im = im.resize((round(im.size[0]*0.5), round(im.size[1]*0.5)))
         im_cropped = mtcnn(im)
+        #im_cropped = im_cropped.resize((round(im_cropped.size[0]*0.5), round(im_cropped.size[1]*0.5)))
         im_embedding = resnet(im_cropped.unsqueeze(0))
         embeddinglist.append(im_embedding) # Important part: making baseembeddinglist
     return embeddinglist
@@ -73,15 +78,18 @@ def predict(newfaceimage, baseembeddinglist, name_list):
             continue
 
     prediction_list = []
-
     # For all faces in the image, predict whose face is each of them
     for each_new_face_embedding in face_embedding_list:
         cosine_similarity_list = []
         for each_embedding in baseembeddinglist:
             cosine_similarity_list.append(torch.mean(F.cosine_similarity(each_new_face_embedding, each_embedding, dim=0)))
 
-        prediction_index = max(range(len(cosine_similarity_list)), key=cosine_similarity_list.__getitem__)
-        prediction_result = name_list[prediction_index] # Prediction result (for users)
-        prediction_list.append(prediction_result)
+        if max(cosine_similarity_list) > 0.05:
+            prediction_index = cosine_similarity_list.index(max(cosine_similarity_list))
+            prediction_result = name_list[prediction_index] # Prediction result (for users)
+            prediction_list.append(prediction_result)
+        else:
+            prediction_result = "Unknown"
+            prediction_list.append(prediction_result)
 
     return prediction_list # This contains who are in the photo
