@@ -16,9 +16,12 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 9. Click “Download” text to download the organized folder with subfolders of names of the people
 10. All done! Check the zip file whether every image seems to be organized correctly!
 
-
-
 ## What to do when errors come up:
 1. (For most problems) Click the “Reset” button at the end of each page to reset all the data uploaded or entered data and start again from the home page of [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
 2. The webpage may give errors between annotation page and classify page because of the long time duration from our face recognition model. If so, please go back to the home page [whoisinmyphoto.com](https://www.whoisinmyphoto.com) and go to the next page and click the reset button. This will delete all the information entered by you and you can start over the service with no problem.
 3. If there is an error during a demo due to deviation from steps above that is not solved with the “Reset” button, please let us know so that we can renew the service.
+
+## Example directories (or folders) to upload
+1. For uploads page
+![alt text](https://www.whoisinmyphoto.com/static/ScreenShotObamaFamilyImage.png)
+3. For annotations page
