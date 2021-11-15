@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Who Is In My Photo</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/notenoughinfo.css') }}">
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1> You have missed some of the info (uploading photo, number of people, each person photo) </h1>
+    <h2>Please press Reset button to start over!</h2>
+
+    <p>Note that </p>
+    <ol>
+      <li>Your uploaded photo should only have either image format of .jpg, .png, .jpeg</li>
+      <li>Make sure to upload correctly for both uploads page and annotations page</li>
+      <li>Please wait a while after clicking upload button to let webpage download the images</li>
+    </ol>
+    <p>Please press the reset button again if there is recurring problems throughout the webpage</p>
+
+    <div>
+    <form action="" style="text-align:center;background-color:tomato;width:100%;">
+        <a href = "{{url_for('upload_reset')}}" style="color:white;width:100%;">Reset (Start Over)</a>
+    </form>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
