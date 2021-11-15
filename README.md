@@ -28,5 +28,5 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 </p>
 2. For annotations page
 <p align="center">
-  <img src="https://www.whoisinmyphoto.com/static/ScreenShotEachObamaMember.png" width="750" height="346">
+  <img src="https://www.whoisinmyphoto.com/static/ScreenShotEachObamaMember.png" width="628" height="346">
 </p>
