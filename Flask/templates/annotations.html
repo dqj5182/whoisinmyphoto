@@ -11,43 +11,32 @@
         {% block content %}
 
         <h1> Please let us know whose face this is! </h1>
+        <p> Please upload a folder or a directory with single image for each person with the name of each people as the name of each image file (Please see the example directory below): </p>
+        <img src="/static/ScreenShotEachObamaMember.png" width="628" height="346">
+        <div class="file-input">
+        <form action="" method="post" enctype="multipart/form-data">
+        <label for="files">
+        Select Folder
+        <input type="file" name="file" id="files" class="file-name" multiple directory="" webkitdirectory="" moxdirectory="" />
+        </label>
+        </div>
+        <br/>
+        <div class="inst1">
+        <p>&#9888; Please make sure to click "Upload", after clicking "Select Folder" but before clicking "Next", to successfully upload your images to our system. &#9888;</p>
+        </div>
+        <br/>
+        <input onclick="alert('Successfully Uploaded! (Images)')" class="green_button" type="submit" value="Upload" name="upload" accept="image/*"/>
+        </form>
+        <div style="height:10px; width:100%; clear:both;"></div>
+        It usually takes up to five minutes to process images, so please be patient.
+        <div style="height:40px; width:100%; clear:both;"></div>
 
-        <img src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwNzg5ODI4MTEw/barack-obama-12782369-1-402.jpg" alt="Barack" width="333" height="333">
-
-        <form action="" method="post">
-            <label for="fname1">Name: </label>
-            <input type="text" id="fname1" name="fname1"><br><br>
-            <input onclick="alert('Successfully Uploaded! (Name)')" type="submit" value="Submit">
-          </form>
-
-        <img src="https://www.biography.com/.image/t_share/MTczNjEwODI2NTg5MDg3MTI0/michelle-obama-gettyimages-85246899.jpg" alt="Michelle" width="333" height="333">
-
-        <form action="" method="post">
-            <label for="fname2">Name: </label>
-            <input type="text" id="fname2" name="fname2"><br><br>
-            <input onclick="alert('Successfully Uploaded! (Name)')" type="submit" value="Submit">
-          </form>
-
-        <img src="https://media.vanityfair.com/photos/5bae610487834306acdc6754/4:3/w_1776,h_1332,c_limit/malia-obama-college-music-video.jpg" alt="Malia" width="333" height="333">
-
-        <form action="" method="post">
-            <label for="fname3">Name: </label>
-            <input type="text" id="fname3" name="fname3"><br><br>
-            <input onclick="alert('Successfully Uploaded! (Name)')" type="submit" value="Submit">
-          </form>
-
-        <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTgxODkyNjEwNjk5MzA2MzEy/gettyimages-498724368.jpg" alt="Sasha" width="333" height="333">
-
-        <form action="" method="post">
-            <label for="fname4">Name: </label>
-            <input type="text" id="fname4" name="fname4"><br><br>
-            <input onclick="alert('Successfully Uploaded! (Name)')" type="submit" value="Submit">
-          </form>
-
+        <div style="text-align: center;">
         <a href="/upload" class="previous">&laquo; Previous</a>
         <a href="/classify" class="next">Next &raquo;</a>
-        <form action="">
-            <a href = "{{url_for('annotations_reset')}}">Reset</a>
+        </div>
+        <form action="" style="text-align:center;background-color:tomato;width:100%;">
+            <a href = "{{url_for('annotations_reset')}}" style="color:white;width:100%;">Reset (Start Over)</a>
         </form>
         {% endblock %}
     </body>
