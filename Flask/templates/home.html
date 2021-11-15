@@ -2,26 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Flask Tutorial</title>
+    <title>Who Is In My Photo</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/home.css') }}">
   </head>
   <body>
     {% extends "template.html" %}
     {% block content %}
+    <h1> A photo organizer based on Face Recognition system to ease your burden </h1>
+    <img src="https://miro.medium.com/max/915/1*XknCwHJ88MvR0RznnHP47Q.png" alt="thankyou" width="915" height="413" class="center">
+    <div class="ex1">
+    <p>This webpage allows you to make several distinct folders that contains photos with specific person.
+    For example, your name is Daniel and you have friends named Michael and John.
+    You want to make three folders named "Michael", "John", and "Daniel" to organize the photos you have with respect to who is in your photo.
+    In the Michael folder, there are photos that has Michael in it.
+    In the John folder, there are all the photos that has John in it.
+    As you may have guessed or wanted, each folder may have overlapping photos with other folder as one photo can have both Michael and John (especially when it is a family photo).
+    Now, if you are fully understood about this webpage, please upload a folder that contains the photos you want to organize at the next page.</p>
+    </div>
 
+    <div style="height:20px; width:100%; clear:both;"></div>
+    <div style="text-align:center">
     <strong><nav>
-      <ul class="menu">
-        <li><a href="{{ url_for('upload') }}">Start with making folders of your friends and family!</a></li>
-      </ul>
+    <a href="{{ url_for('upload') }}">Start with making folders of your friends and family!</a>
     </nav></strong>
-
-    <h1> About our webpage </h1>
-    <p>This webpage allows you to make several separate folders that contains specific person.</p>
-    <p>For example, you have friends named Michael, John and your name is Daniel.</p>
-    <p>You want to make three folders named "Michael", "John", and "Daniel".</p>
-    <p>In the Michael folder, there are all the photos that has Michael in it.</p>
-    <p>In the John folder, there are all the photos that has John in it.</p>
-    <p>As you may have guessed or wanted, each folder may have overlapping photos as one photo can have both Michael and John.</p>
-    <p>Now, if you are fully understood about this webpage, please upload a folder that contains the photos you want to process.</p>
+    </div>
 
     {% endblock %}
   </body>
