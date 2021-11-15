@@ -1,6 +1,7 @@
 # whoisinmyphoto
 
 The fully working webpage is now available at [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
+![alt text](https://miro.medium.com/max/915/1*XknCwHJ88MvR0RznnHP47Q.png)
 
 ## Steps:
 1. Open the webpage [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
