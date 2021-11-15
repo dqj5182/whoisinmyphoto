@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Upload images!</title>
+<head>
+    <meta charset="utf-8">
+    <title>Upload images!</title>
 
-        <link rel="stylesheet" href="{{ url_for('static',     filename='css/upload.css') }}">
-    </head>
-    <body>
-        {% extends "template.html" %}
-        {% block content %}
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/upload.css') }}">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
 
-        <h1>Please upload the folder that contains all of the images! </h1>
+    <section class="introduction">
+        <h1>Please upload the folder that contains all of the images!</h1>
+        <p>Please upload a folder or a directory with images that you want to organize (Please see the example directory below):</p>
+    </section>
 
-        <form action="" method="post" enctype="multipart/form-data">
-        Select Folder to Upload: <input type="file" name="file" id="files" multiple directory="" webkitdirectory="" moxdirectory="" /><br/><br/>
-        <input onclick="alert('Successfully Uploaded! (Images)')" type="submit" value="Upload" name="upload" accept="image/*"/>
-        </form>
-        <br>
-        <br>
-        <form action="" method="post" enctype="multipart/form-data">
-        <label for="quantity">Number of people (between 1 and 10):</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10">
-        <input onclick="alert('Successfully Uploaded! (Number)')" type="submit">
-        </form>
+    <img src="/static/ScreenShotObamaFamilyImage.png" width="698" height="506">
 
-        <a href="/" class="previous">&laquo; Previous</a>
-        <a href="/annotations" class="next">Next &raquo;</a>
-        <form action="">
-            <a href = "{{url_for('upload_reset')}}">Reset</a>
-        </form>
-        {% endblock %}
-    </body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="file-input">
+            <label for="files">Select Folder</label>
+            <input type="file" name="file" id="files" class="file-name" multiple directory="" webkitdirectory="" moxdirectory="">
+        </div>
+
+        <div class="inst1">
+            <p>&#9888; Please make sure to click "Upload", after clicking "Select Folder" but before clicking "Next", to successfully upload your images to our system. &#9888;</p>
+        </div>
+
+        <input onclick="alert('Successfully Uploaded! (Images)')" class="green_button" type="submit" value="Upload" name="upload" accept="image/*">
+    </form>
+    <br>
+    <br>
+
+    <div style="height:14px; width:100%; clear:both;"></div>
+    <div style="text-align: center;">
+    <a href="/" class="previous">&laquo; Previous</a>
+    <a href="/annotations" class="next">Next &raquo;</a>
+    </div>
+    <div>
+    <form action="" style="text-align:center;background-color:tomato;width:100%;">
+        <a href = "{{url_for('upload_reset')}}" style="color:white;width:100%;">Reset (Start Over)</a>
+    </form>
+    </div>
+    {% endblock %}
+</body>
 </html>
 
 <!-- 1. User uploads image folder directory -->
