@@ -22,6 +22,6 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 3. If there is an error during a demo due to deviation from steps above that is not solved with the “Reset” button, please let us know so that we can renew the service.
 
 ## Example directories (or folders) to upload
-1. For uploads page
+1. For uploads page<br/>
 ![alt text]<img src="https://www.whoisinmyphoto.com/static/ScreenShotObamaFamilyImage.png" width="698" height="506">
-3. For annotations page
+2. For annotations page
