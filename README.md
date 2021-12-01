@@ -38,13 +38,22 @@ Our webpage generates zip file for our users when the users press download butto
 <p align="center">
   <img src="/example/screenshot_organized_folder.png" width="706" height="334">
 </p>
-2. Folder 1
-
-3. Folder 2
-
-4. Folder 3
-
-5. Folder 4
+2. Folder 1: Barack
+<p align="center">
+  <img src="/example/screenshot_barack_folder.png" width="706" height="335">
+</p>
+3. Folder 2: Malia
+<p align="center">
+  <img src="/example/screenshot_malia_folder.png" width="706" height="332">
+</p>
+4. Folder 3: Michelle
+<p align="center">
+  <img src="/example/screenshot_michelle_folder.png" width="706" height="332">
+</p>
+5. Folder 4: Sasha
+<p align="center">
+  <img src="/example/screenshot_sasha_folder.png" width="706" height="333">
+</p>
 
 ## Face recognition model
 Our face recognition is based on [FaceNet](https://arxiv.org/abs/1503.03832) model which consists of [Inception-Resnet-v1](https://arxiv.org/abs/1602.07261) (pretrained on [VGGFace2](https://arxiv.org/abs/1710.08092)) and [MTCNN (Multi-task Cascaded Convolutional Networks)](https://arxiv.org/abs/1604.02878)
