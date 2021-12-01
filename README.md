@@ -36,7 +36,7 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 Our webpage generates zip file for our users when the users press download button.
 1. General view of a folder when the zip file is decompressed
 <p align="center">
-  ![alt text](/example/screenshot_organized_folder.png)
+  <img src="/example/screenshot_organized_folder.png" width="698" height="506">
 </p>
 2. Folder 1
 
