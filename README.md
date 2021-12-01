@@ -1,4 +1,4 @@
-# whoisinmyphoto
+# whoisinmyphoto: A photo organizer that organizes photos using face recognition technology
 
 The fully working webpage is now available at [whoisinmyphoto.com](https://www.whoisinmyphoto.com)
 <p align="center">
