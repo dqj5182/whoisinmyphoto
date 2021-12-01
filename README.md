@@ -35,9 +35,15 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
 ## Result of our service
 Our webpage generates zip file for our users when the users press download button.
 1. General view of a folder when the zip file is decompressed
+<p align="center">
+  ![alt text](/example/screenshot_organized_folder.png)
+</p>
 2. Folder 1
+
 3. Folder 2
+
 4. Folder 3
+
 5. Folder 4
 
 ## Face recognition model
