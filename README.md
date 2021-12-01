@@ -32,5 +32,13 @@ The fully working webpage is now available at [whoisinmyphoto.com](https://www.w
   <img src="https://www.whoisinmyphoto.com/static/ScreenShotEachObamaMember.png" width="628" height="346">
 </p>
 
+## Result of our service
+Our webpage generates zip file for our users when the users press download button.
+1. General view of a folder when the zip file is decompressed
+2. Folder 1
+3. Folder 2
+4. Folder 3
+5. Folder 4
+
 ## Face recognition model
 Our face recognition is based on [FaceNet](https://arxiv.org/abs/1503.03832) model which consists of [Inception-Resnet-v1](https://arxiv.org/abs/1602.07261) (pretrained on [VGGFace2](https://arxiv.org/abs/1710.08092)) and [MTCNN (Multi-task Cascaded Convolutional Networks)](https://arxiv.org/abs/1604.02878)
